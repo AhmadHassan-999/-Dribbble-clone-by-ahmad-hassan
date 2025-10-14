@@ -1,0 +1,261 @@
+/* ==================================================== */
+/* 1. TABLET / LAPTOP (MAX-WIDTH: 992px) */
+/* ==================================================== */
+@media (max-width: 992px) {
+    .container {
+        max-width: 95%;
+        padding: 0 15px;
+    }
+
+    /* Main Nav Bar (Top Nav) */
+    .nav-links {
+        /* Default hide for mobile/tablet side menu */
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: white;
+        z-index: 10;
+        padding: 20px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links ul {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+        padding-left: 20px;
+    }
+    .nav-btns {
+        margin-right: 0;
+    }
+    .menu-toggle {
+        display: block; /* Hamburger icon visible */
+    }
+
+    /* Hero Section */
+    .wrapper-container {
+        flex-direction: column; /* Content stack ho jaaye */
+        text-align: center;
+    }
+    .left-wrapper,
+    .right-wrapper {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .left-wrapper-hading {
+        font-size: 2.5rem;
+        width: 100%;
+        margin: 0 auto 10px auto;
+    }
+    .left-wrapper-para { /* Corrected: Pehlay heading k andar nested tha */
+        width: 100%;
+        margin: 0 auto 25px auto;
+    }
+    .icon-part {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .search-bar {
+        width: 100%;
+        justify-content: center;
+        margin: 20px auto;
+    }
+
+    /* 2nd Nav Bar (Category bar) */
+    .second-nav ul {
+        justify-content: flex-start;
+        overflow-x: auto; /* Scrollable banaya */
+        white-space: nowrap;
+        padding-bottom: 10px;
+    }
+    .second-nav li {
+        flex: 0 0 auto;
+    }
+
+    /* Card Section */
+    .card-section-content { /* Corrected class name */
+        justify-content: space-around; 
+    }
+    .card {
+        width: 48%; /* 2 cards in one row */
+    }
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Footer */
+    .footer-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+    .footer-links ul { /* ul ko target kiya */
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .footer-icon {
+        margin-left: 0;
+        justify-content: center;
+    }
+    .footer-container {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    .right-footer ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 20px;
+    }
+}
+
+/* ==================================================== */
+/* 2. MOBILE LANDSCAPE (MAX-WIDTH: 600px) */
+/* ==================================================== */
+@media (max-width: 600px) {
+    /* Nav Bar Fix: Logo/Toggle Left aur Buttons Right */
+    nav {
+        justify-content: space-between; 
+        padding: 8px 15px; 
+    }
+    
+    .main-nav {
+        justify-content: flex-start;
+        gap: 15px; 
+        width: auto;
+    }
+    .nav-logo img {
+        width: 120px; 
+    }
+    
+    /* Buttons ki Styling (Shape/Size Fix) */
+    .nav-btns {
+        gap: 5px;
+    }
+
+    .secondary-btn,
+    .primary-btn { /* primary-btn class ab HTML me hai */
+        padding: 8px 15px; 
+        font-size: 0.8rem;
+        border-radius: 20px;
+        margin-left: 0;
+    }
+    
+    /* Hero Section Headings */
+    .left-wrapper-hading {
+        font-size: 2rem;
+    }
+    .left-wrapper-para {
+        font-size: 1rem;
+    }
+
+    /* Card Section */
+    .card-section-content { /* Corrected class name */
+        justify-content: center;
+    }
+    .card {
+        width: 90%; 
+        max-width: 300px; 
+        margin-bottom: 20px;
+    }
+
+    /* Search Bar icons */
+    .search-btn {
+        right: 40px; 
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* ==================================================== */
+/* 3. MOBILE PORTRAIT (MAX-WIDTH: 480px) */
+/* ==================================================== */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px; 
+    }
+
+    /* Main Heading Size Adjust */
+    .left-wrapper-hading {
+        font-size: 1.6rem; 
+    }
+
+    /* Paragraph Size Adjust */
+    .left-wrapper-para {
+        font-size: 0.9rem;
+    }
+
+    /* Icon Part */
+    .icon-part {
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+    .icon-hover {
+        margin-left: 5px; 
+        padding: 6px 10px;
+        font-size: 0.9rem;
+    }
+    
+    /* Search Bar */
+    .search-box {
+        padding: 10px 15px; 
+        font-size: 0.9rem;
+    }
+    .search-btn {
+        right: 35px; 
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* ==================================================== */
+/* 4. SMALLEST SCREENS (MAX-WIDTH: 360px) */
+/* ==================================================== */
+@media (max-width: 360px) {
+    /* Nav Bar Logo aur Buttons */
+    .nav-logo img {
+        width: 100px;
+    }
+    .secondary-btn,
+    .primary-btn { 
+        padding: 6px 10px; 
+        font-size: 0.75rem;
+    }
+    
+    .menu-toggle {
+        font-size: 1.5rem; 
+    }
+
+    /* Hero Section Headings */
+    .left-wrapper-hading {
+        font-size: 1.4rem;
+    }
+    .left-wrapper-para {
+        font-size: 0.8rem;
+    }
+
+    /* Search button */
+    .search-btn {
+        right: 30px; 
+        width: 30px;
+        height: 30px;
+    }
+    
+    /* Footer links */
+    .footer-links ul,
+    .right-footer ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+  }

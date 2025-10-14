@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mona Sans", Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Mona Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  max-width: 1120px;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #060218;
+  font-weight: 600;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+/** * Nav Bar ***/
+
+.menu-toggle {
+  display: none; /* Default hide on desktop */
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+nav {
+  height: auto;
+  align-items: center;
+  padding: 8px;
+  justify-content: space-between;
+}
+
+.nav-logo img {
+  width: 200px;
+  margin-top: 10px;
+}
+
+.nav-links ul {
+  display: flex;
+  gap: 30px;
+  color: black;
+}
+
+/* Primary Button (Sign Up) missing style was here */
+.primary-btn {
+  background-color: transparent; /* Default background for Sign up link */
+  color: #060218;
+  padding: 13px 24px;
+  border-radius: 30px;
+  border: 1px solid transparent;
+}
+.primary-btn:hover {
+  border-color: #060218; /* Hover effect for Sign up button */
+}
+
+.secondary-btn {
+  background-color: #0d0c22;
+  padding: 13px 24px;
+  color: #fff;
+  border-radius: 30px;
+  margin-left: 10px;
+}
+
+.nav-btns {
+  margin-right: 3rem;
+}
+
+.hover-link:hover {
+  color: rgb(173, 111, 173);
+}
+
+/** * MANIN-SECTION ***/
+
+.right-wrapper video {
+  width: 100%;
+  border-radius: 5%;
+}
+
+.wrapper-container {
+  gap: 20px;
+}
+
+.left-wrapper-hading {
+  font-size: 3rem;
+  width: 80%;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.left-wrapper-para {
+  color: #0d0c22;
+  font-size: 1.1rem;
+  width: 90%;
+  margin-bottom: 25px;
+}
+
+/*** ICON SECTION ***/
+
+.icon-hover {
+  margin-left: 15px;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  padding: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: transparent; /* Added to ensure consistent behavior */
+  cursor: pointer;
+}
+
+.icon-hover:hover {
+  background-color: rgb(227, 227, 218);
+}
+
+.icon-hover:focus {
+  background-color: black;
+  color: #fff;
+}
+
+/*** SEARCH  BAR  ***/
+
+.search-bar {
+  margin-top: 20px;
+  width: 90%;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  background-color: rgb(246, 238, 238);
+  padding: 15px 25px;
+  transition: 0.3s ease-out;
+}
+
+.search-box {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 1rem;
+  border: none; /* Border remove kiya taa k hover border dikhe */
+  background-color: transparent; /* Background transparency */
+}
+
+.search-bar input:hover {
+  background-color: white;
+  border: 1.3px solid rgb(227, 227, 240);
+}
+
+.search-btn {
+  background-color: #ea4c89;
+  color: #fff;
+  border-radius: 45px;
+  border: none;
+  font-size: 16px;
+  width: 45px;
+  height: 45px;
+  position: relative;
+  right: 50px;
+  cursor: pointer;
+}
+
+/*** BANNER SECTION ***/
+
+.main-banner {
+  padding: 50px 0;
+}
+
+.banner-text {
+  background-color: #f5f5f5;
+  padding: 20px 25px;
+  border-radius: 20px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: lightgray;
+}
+
+.span {
+  background-color: white;
+  padding: 13px;
+  border-radius: 50px;
+  margin-right: 19px;
+  color: #060218; /* Added: Ta k visible ho */
+}
+
+.banner-text a {
+  color: gray; /* Added: Ta k text visible ho */
+}
+
+/*** 2ND NAV BAR ***/
+
+.second-nav ul {
+  justify-content: space-between;
+}
+
+.drop-down {
+  border: 2px solid rgb(232, 229, 229);
+  padding: 8px 30px;
+}
+
+.hover-state {
+  transition: 0.3s ease-out;
+}
+
+.hover-state:hover {
+  background-color: #ccc;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.navbar {
+  margin: 30px 0 50px 0;
+}
+
+/*** CARD SECTION ***/
+/* Class name fix: .card-section-content for inner flex */
+.card-section-content {
+  justify-content: space-between;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card img {
+  width: 300px;
+  height: 240px;
+}
+
+.card {
+  /* Added: Ta k images achay se dikhen */
+  width: 31%;
+}
+
+.card-text {
+  font-weight: 600;
+}
+
+.pro {
+  background-color: grey;
+  color: white;
+  opacity: 0.8;
+  padding: 3px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+.pro:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.signup {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* AUTO SCROLL SLIDER SECTION */
+.bottom-slider {
+  margin: 70px auto;
+  max-width: 1120px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-heading {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.slider-container {
+  display: flex;
+  gap: 25px;
+  width: max-content;
+  animation: scrollSlider 30s linear infinite;
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 230px;
+  text-align: center;
+}
+
+.slide img {
+  width: 230px;
+  height: 180px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.slide p {
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Infinite loop animation */
+@keyframes scrollSlider {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/*** footer icons ****/
+.footer-main-section {
+  /* New class added in HTML fix */
+  margin-top: 70px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.footer-nav {
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-icon {
+  display: flex;
+  gap: 10px;
+  /* margin-left: 70px; Removed for better responsiveness */
+}
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* ======== FOOTER ======== */
+.main-footer {
+  /* border-top: 1px solid #e5e5e5; Removed kyu k main-section me add kar diya */
+  padding: 25px 0;
+  background-color: #fff;
+  font-size: 14px;
+  color: #6e6d7a;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-container p {
+  margin: 0;
+}
+
+.footer-container span {
+  color: #ea4c89;
+  font-weight: 600;
+}
+
+.right-footer ul {
+  display: flex;
+  gap: 20px;
+}
+
+.right-footer a {
+  color: #6e6d7a;
+  transition: 0.3s;
+}
+
+.right-footer a:hover {
+  color: #ea4c89;
+}

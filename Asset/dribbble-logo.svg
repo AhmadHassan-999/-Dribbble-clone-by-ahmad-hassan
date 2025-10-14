@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="140" viewBox="0 0 400 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dribbble logo">
+  <title>Dribbble (demo) logo</title>
+  <!-- Ball icon (stylized) -->
+  <g transform="translate(40,20)">
+    <circle cx="40" cy="40" r="36" fill="#ea4c89"/>
+    <path d="M8 30 C35 10, 65 10, 92 30" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M12 52 C34 38, 60 38, 80 52" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M30 10 C40 30, 40 50, 30 70" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(120,78)">
+    <text x="0" y="0" font-family="Poppins, Arial, sans-serif" font-weight="600" font-size="36" fill="#111">
+      dribbble
+    </text>
+  </g>
+</svg>
